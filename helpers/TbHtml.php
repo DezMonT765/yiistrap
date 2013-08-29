@@ -1647,7 +1647,7 @@ EOD;
         if (!empty($displaySize)) {
             $htmlOptions['size'] = $displaySize;
         }
-        return parent::dropDownList($name, $select, $data, $htmlOptions);
+       return parent::activeDropDownList($model, $attribute, $data, $htmlOptions);
     }
 
     /**
